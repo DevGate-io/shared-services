@@ -1,0 +1,16 @@
+name: devgate-rabbitmq
+services:
+  rabbitmq:
+    image: rabbitmq:4-management
+    container_name: rabbitmq
+    hostname: rabbitmq
+    restart: unless-stopped
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    external: true
