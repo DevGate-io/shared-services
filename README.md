@@ -48,6 +48,7 @@ make down-all
 ```
 127.0.0.1 api.devgate.users.local
 127.0.0.1 api.devgate.audit.local
+127.0.0.1 api.devgate.summary.local
 ```
 
 ## Broker (RabbitMQ)
